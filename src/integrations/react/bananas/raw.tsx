@@ -6,10 +6,10 @@ import { EffectComposer, DepthOfField } from "@react-three/postprocessing";
 
 import { css } from "~/styled-system/css";
 
-import { Banana } from "./banana";
+import { Banana } from "./raw/banana";
 
 /** @package */
-export const bananas = ({ speed = 1, count = 80, depth = 80, easing = (x: number) => Math.sqrt(1 - (x - 1) ** 2) }) => (
+export const Raw = ({ speed = 1, count = 80, depth = 80, easing = (x: number) => Math.sqrt(1 - (x - 1) ** 2) }) => (
 	<div className={css({ position: "fixed", zIndex: -1, inset: 0 })}>
 		<Canvas flat gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 10], fov: 20, near: 0.01, far: depth + 15 }}>
 			<color attach="background" args={["#ffd863"]} />
