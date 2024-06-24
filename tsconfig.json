@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "checkJs": true,
     "allowJs": true,
     "target": "ES2017",
     "module": "ES2022",
@@ -16,10 +17,19 @@
     "isolatedModules": true,
     "outDir": "tmp",
     "noEmit": true,
+    "types": ["node", "vite/client"],
+    "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
-    }
+      "~/*": ["src/*"]
+    },
+    "plugins": [{ "name": "eslint-plugin-import-access" }]
   },
-  "files": ["./.eslintrc.cjs"],
-  "include": ["src", "./*.d.ts", "./*.config.ts"]
+  "files": [
+    "commitlint.config.js",
+    "eslint.config.cjs",
+    "eslint.config.import.cjs",
+    "prettier.config.js",
+    "vite.config.ts"
+  ],
+  "include": ["src", "*.d.ts"]
 }

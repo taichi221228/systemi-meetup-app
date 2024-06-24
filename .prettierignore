@@ -1,37 +1,53 @@
-**/*.log
-**/.DS_Store
-*.
-.vscode/settings.json
-.history
-.yarn
-bazel-*
-bazel-bin
-bazel-out
-bazel-qwik
-bazel-testlogs
-dist
-dist-dev
-lib
-lib-types
-etc
-external
-node_modules
-temp
-tsc-out
-tsdoc-metadata.json
-target
-output
-rollup.config.js
-build
-.cache
-.vscode
+# prevent linter conflicts
+*.js
+*.cjs
+*.mjs
+*.ts
+*.cts
+*.mts
+*.jsx
+*.tsx
+*.json
+*.jsonc
+.*rc
+.vscode/launch.json
+.vscode/*.code-snippets
+
+# dev
+.yarn/
+!.yarn/releases
+.vscode/*
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+
+# build
+dist/
+lib/
+lib-types/
+server/
+
+# deps
+node_modules/
+
+# cache
+.cache/
+.mf
 .rollup.cache
 tsconfig.tsbuildinfo
-vite.config.ts
-*.spec.tsx
-*.spec.ts
-.netlify
-pnpm-lock.yaml
-package-lock.json
-yarn.lock
-server
+
+# env
+.env
+.env.production
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# misc
+.DS_Store
