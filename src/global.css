@@ -1,5 +1,12 @@
 @layer reset, base, tokens, recipes, utilities;
 
+@font-face {
+	src: url("./assets/AyerPoster-Medium.woff2") format("woff2");
+	font-family: "Ayer Poster";
+	font-style: normal;
+	font-weight: 500;
+}
+
 body {
 	font-family: "Inter Variable", sans-serif;
 	font-weight: 500;
