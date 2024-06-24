@@ -7,12 +7,7 @@ import { css } from "~/styled-system/css";
 export default component$(() => {
 	return (
 		<>
-			<div
-				class={css({
-					fontFamily: "Inter",
-					fontSize: "16px",
-				})}
-			>
+			<div>
 				<div
 					class={css({
 						position: "absolute",
@@ -22,11 +17,10 @@ export default component$(() => {
 				>
 					<h1
 						class={css({
-							marginInlineEnd: "0.05em",
 							fontFamily: "Ayer Poster, serif",
 							fontWeight: 400,
 							fontSize: "min(18vw, 14em)",
-							lineHeight: "0.85em",
+							lineHeight: "0.85",
 						})}
 					>
 						LANDING
