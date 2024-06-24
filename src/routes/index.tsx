@@ -2,12 +2,15 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { VelvetBanana } from "~/components/velvet-banana/velvet-banana";
+import { Bananas } from "~/integrations/react/bananas/bananas";
 import { css } from "~/styled-system/css";
 
 /** @private */
 export default component$(() => {
 	return (
 		<>
+			<Bananas speed={speed.value} />
+
 			<VelvetBanana
 				class={css({
 					position: "absolute",
