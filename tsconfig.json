@@ -25,5 +25,5 @@
 		"plugins": [{ "name": "eslint-plugin-import-access" }]
 	},
 	"files": ["commitlint.config.js", "eslint.config.cjs", "eslint.config.import.cjs", "prettier.config.js", "vite.config.ts"],
-	"include": ["src", "*.d.ts"]
+	"include": ["src", "*.d.ts", "node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts"]
 }
