@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { VelvetBanana } from "~/components/velvet-banana/velvet-banana";
@@ -7,6 +7,8 @@ import { css } from "~/styled-system/css";
 
 /** @private */
 export default component$(() => {
+	const speed = useSignal(1);
+
 	return (
 		<>
 			<Bananas speed={speed.value} />
@@ -28,7 +30,17 @@ export default component$(() => {
 					transformOrigin: "100%",
 				})}
 			>
-				<input type="range" min="0" max="10" step="1" value={1} />
+				<input
+					type="range"
+					min="0"
+					max="10"
+					step="1"
+					value={speed.value}
+					onInput$={(e) => {
+						const element = e.target as HTMLInputElement | null;
+						if (element) speed.value = Number(element.value);
+					}}
+				/>
 			</div>
 		</>
 	);
