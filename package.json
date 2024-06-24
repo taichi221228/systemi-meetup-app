@@ -42,6 +42,7 @@
 		"eslint-plugin-import": "^2.29.1",
 		"eslint-plugin-import-access": "^2.2.1",
 		"eslint-plugin-qwik": "^1.5.7",
+		"husky": "^9.0.11",
 		"prettier": "^3.2.5",
 		"typescript": "5.4.5",
 		"undici": "*",
