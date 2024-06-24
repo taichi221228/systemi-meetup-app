@@ -22,8 +22,8 @@ export const Raw = ({ speed = 1, count = 80, depth = 80, easing = (x: number) =>
 			<color attach="background" args={["#ffd863"]} />
 			<spotLight position={[10, 20, 10]} penumbra={1} decay={0} intensity={4} color="yellow" />
 
-			{Array.from({ length: count }, (_, i) => (
-				<Banana key={crypto.randomUUID()} index={i} z={Math.round(easing(i / count) * depth)} speed={speed} />
+			{Array.from({ length: count }, (_, i) => ({ id: i + 1 })).map(({ id }, i) => (
+				<Banana key={id} index={i} z={Math.round(easing(i / count) * depth)} speed={speed} />
 			))}
 
 			<Environment preset="sunset" />
