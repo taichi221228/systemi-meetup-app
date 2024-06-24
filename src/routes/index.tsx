@@ -44,7 +44,9 @@ export default component$(() => {
 						maxInlineSize: "40%",
 					})}
 				>
-					A runtime deconstruction of <a href="https://playful.software">playful.software</a>
+					<p>
+						A runtime deconstruction of <a href="https://playful.software">playful.software</a>
+					</p>
 				</div>
 				<div
 					class={css({
@@ -58,21 +60,14 @@ export default component$(() => {
 						textAlign: "right",
 					})}
 				>
-					Inspiration and ideas
-					<br />
-					Fundamentals
-					<br />
-					Finding models
-					<br />
-					Preparing them for the web
-					<br />
-					Displaying and changing models
-					<br />
-					Animation fundamentals
-					<br />
-					Effects and making things look good
-					<br />
-					Performance and time to load
+					<p>Inspiration and ideas</p>
+					<p>Fundamentals</p>
+					<p>Finding models</p>
+					<p>Preparing them for the web</p>
+					<p>Displaying and changing models</p>
+					<p>Animation fundamentals</p>
+					<p>Effects and making things look good</p>
+					<p>Performance and time to load</p>
 				</div>
 			</div>
 			<div
