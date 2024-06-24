@@ -2,6 +2,8 @@
 
 This is a test application for SystemI's meetup.
 
+![Flying Bananas](https://github.com/taichi221228/systemi-meetup-app/assets/58300794/26e9658b-db5a-4add-a5df-506cf821162e)
+
 - [Qwik](https://qwik.dev/)
 - [React](https://react.dev/)
 - [Three.js](https://threejs.org/)
