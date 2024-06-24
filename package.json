@@ -20,7 +20,7 @@
 		"fmt": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier --write .\" \"bunx @biomejs/biome format --write .\"",
 		"fmt.check": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier --check .\" \"bunx @biomejs/biome format .\"",
 		"lint": "concurrently -n \"eslint,biome\" -c \"#4831BD,#61A5FA\" \"ESLINT_USE_FLAT_CONFIG=false eslint -c \\\"./eslint.config.cjs\\\" \\\"src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}\\\"\" \"bunx @biomejs/biome lint .\"",
-		"lint.fix": "concurrently -n \"eslint,biome\" -c \"#4831BD,#61A5FA\" \"ESLINT_USE_FLAT_CONFIG=false eslint -c \\\"./eslint.config.cjs\\\" --fix \\\"src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}\\\"\" \"bunx @biomejs/biome lint --apply .\"",
+		"lint.fix": "concurrently -n \"eslint,biome\" -c \"#4831BD,#61A5FA\" \"ESLINT_USE_FLAT_CONFIG=false eslint -c \\\"./eslint.config.cjs\\\" --fix \\\"src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}\\\"\" \"bunx @biomejs/biome lint --write .\"",
 		"preview": "qwik build preview && vite preview --open",
 		"start": "vite --open --mode ssr",
 		"qwik": "qwik"
