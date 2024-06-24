@@ -6,7 +6,14 @@ export default defineConfig({
 	include: ["./src/**/*.{js,jsx,ts,tsx}"],
 	exclude: [],
 	theme: {
-		extend: {},
+		extend: {
+			keyframes: {
+				fade: {
+					from: { opacity: 0 },
+					to: { opacity: 1 },
+				},
+			},
+		},
 	},
 	outdir: "src/styled-system",
 });
