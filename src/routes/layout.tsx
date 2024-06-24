@@ -2,6 +2,7 @@ import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 import "@fontsource-variable/inter";
+import { Header } from "./layout/header";
 
 /** @private */
 export const onGet: RequestHandler = async ({ cacheControl }) => {
@@ -13,5 +14,10 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 /** @private */
 export default component$(() => {
-	return <Slot />;
+	return (
+		<>
+			<Header />
+			<Slot />
+		</>
+	);
 });
