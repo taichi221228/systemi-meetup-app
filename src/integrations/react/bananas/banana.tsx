@@ -5,16 +5,14 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useRef, useState } from "react";
 import * as THREE from "three";
 
-/** @package */
-export const Banana = ({
-	index,
-	z,
-	speed,
-}: {
+type Props = {
 	index: number;
 	z: number;
 	speed: number;
-}) => {
+};
+
+/** @package */
+export const Banana = ({ index, z, speed }: Props) => {
 	const ref = useRef<THREE.LOD>(null);
 	const { viewport, camera } = useThree();
 	const { width, height } = viewport.getCurrentViewport(camera, [0, 0, -z]);
@@ -32,9 +30,9 @@ export const Banana = ({
 	const [data] = useState({
 		y: THREE.MathUtils.randFloatSpread(height * 2),
 		x: THREE.MathUtils.randFloatSpread(2),
-		spin: THREE.MathUtils.randFloat(8, 12),
 		rX: Math.random() * Math.PI,
 		rZ: Math.random() * Math.PI,
+		spin: THREE.MathUtils.randFloat(8, 12),
 	});
 
 	useFrame((state, dt) => {
