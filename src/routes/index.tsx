@@ -45,11 +45,11 @@ export default component$(() => {
 
 /** @private */
 export const head: DocumentHead = {
-	title: "Welcome to Qwik",
+	title: "Flying Bananas",
 	meta: [
 		{
 			name: "description",
-			content: "Qwik site description",
+			content: "This is flying bananas",
 		},
 	],
 };

@@ -12,9 +12,9 @@ export const Header = component$(() => (
 				lineHeight: "0.85",
 			})}
 		>
-			LANDING
+			FLYING
 			<br />
-			PAGES —
+			BANANAS —
 		</h1>
 		<p>In Qwik & React & Three.js —</p>
 	</header>

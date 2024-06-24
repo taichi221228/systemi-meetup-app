@@ -1,10 +1,11 @@
-# Qwik City App ⚡️
+# Flying Bananas :banana:
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+This is a test application for SystemI's meetup.
+
+- [Qwik](https://qwik.dev/)
+- [React](https://react.dev/)
+- [Three.js](https://threejs.org/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/)
 
 ---
 
