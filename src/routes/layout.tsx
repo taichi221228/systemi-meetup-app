@@ -3,10 +3,9 @@ import "@fontsource-variable/inter";
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
+import { Footer } from "~/components/footer/footer";
+import { Header } from "~/components/header/header";
 import { css } from "~/styled-system/css";
-
-import { Footer } from "./layout/footer";
-import { Header } from "./layout/header";
 
 /** @private */
 export const onGet: RequestHandler = async ({ cacheControl }) => {

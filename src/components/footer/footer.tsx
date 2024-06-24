@@ -2,7 +2,6 @@ import { component$ } from "@builder.io/qwik";
 
 import { css } from "~/styled-system/css";
 
-/** @package */
 export const Footer = component$(() => (
 	<footer
 		class={css({
