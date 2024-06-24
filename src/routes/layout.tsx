@@ -1,6 +1,8 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
+import "@fontsource-variable/inter";
+
 /** @private */
 export const onGet: RequestHandler = async ({ cacheControl }) => {
 	cacheControl({
