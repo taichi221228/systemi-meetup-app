@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+/** @private */
 export default component$(() => {
 	return (
 		<>
@@ -14,6 +15,7 @@ export default component$(() => {
 	);
 });
 
+/** @private */
 export const head: DocumentHead = {
 	title: "Welcome to Qwik",
 	meta: [
