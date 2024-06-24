@@ -3,6 +3,7 @@ import { qwikCity } from "@builder.io/qwik-city/vite";
 import { defineConfig, type UserConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { macroPlugin } from "@builder.io/vite-plugin-macro";
+import { qwikReact } from "@builder.io/qwik-react/vite";
 
 export default defineConfig((): UserConfig => {
 	return {
@@ -13,6 +14,7 @@ export default defineConfig((): UserConfig => {
 			}),
 			qwikVite(),
 			tsconfigPaths(),
+			qwikReact(),
 		],
 		server: {
 			headers: {
