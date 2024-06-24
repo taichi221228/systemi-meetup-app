@@ -17,6 +17,7 @@ export default component$(() => {
 					margin: "auto",
 				})}
 			/>
+
 			<div
 				class={css({
 					position: "absolute",
