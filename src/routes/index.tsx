@@ -32,7 +32,7 @@ export default component$(() => {
 					max="10"
 					step="1"
 					value={speed.value}
-					onChange$={(e) => {
+					onInput$={(e) => {
 						const element = e.target as HTMLInputElement | null;
 						if (element) speed.value = Number(element.value);
 					}}
