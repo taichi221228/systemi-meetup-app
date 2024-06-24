@@ -7,6 +7,7 @@ export const Footer = component$(() => (
 		class={css({
 			display: "grid",
 			gridTemplateColumns: "repeat(2, 1fr)",
+			alignItems: "end",
 		})}
 	>
 		<p>
