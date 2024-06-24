@@ -10,14 +10,9 @@ export default component$(() => {
 			class={css({
 				position: "absolute",
 				insetBlockEnd: "50%",
-				insetInlineEnd: "5vw",
-				fontFamily: "Inter",
-				fontWeight: 400,
-				lineHeight: "1em",
-				letterSpacing: "-0.01em",
-				fontSize: "12px",
+				insetInlineEnd: "0",
 				transform: "rotate(90deg) translate3d(50%, 0, 0)",
-				transformOrigin: "100% 50%",
+				transformOrigin: "100%",
 			})}
 		>
 			<input

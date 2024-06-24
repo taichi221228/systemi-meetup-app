@@ -4,18 +4,12 @@ import { css } from "~/styled-system/css";
 
 /** @package */
 export const Header = component$(() => (
-	<div
-		class={css({
-			position: "absolute",
-			insetBlockStart: "5vw",
-			insetInlineStart: "5vw",
-		})}
-	>
+	<header>
 		<h1
 			class={css({
 				fontFamily: "Ayer Poster, serif",
 				fontWeight: 400,
-				fontSize: "min(18vw, 14em)",
+				fontSize: "124px",
 				lineHeight: "0.85",
 			})}
 		>
@@ -24,5 +18,5 @@ export const Header = component$(() => (
 			PAGES —
 		</h1>
 		<p>In Qwik & React & Three.js —</p>
-	</div>
+	</header>
 ));
