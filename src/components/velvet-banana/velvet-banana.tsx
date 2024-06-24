@@ -3,7 +3,14 @@ import { component$, type QwikAttributes } from "@builder.io/qwik";
 import { css } from "~/styled-system/css";
 
 export const VelvetBanana = component$(({ class: className }: Pick<QwikAttributes<Element>, "class">) => (
-	<svg class={className} role="img" aria-label="Velvet Banana" viewBox="0 0 1138 1191" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg
+		class={[className, css({ maxInlineSize: "800px" })]}
+		role="img"
+		aria-label="Velvet Banana"
+		viewBox="0 0 1138 1191"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
 		<a href="/">
 			<g class={css({ cursor: "pointer" })}>
 				<path

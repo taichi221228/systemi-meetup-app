@@ -18,7 +18,17 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 /** @private */
 export default component$(() => {
 	return (
-		<div class={css({ position: "relative", display: "flex", flexDirection: "column", justifyContent: "space-between", blockSize: "100%" })}>
+		<div
+			class={css({
+				position: "relative",
+				display: "flex",
+				flexDirection: "column",
+				justifyContent: "space-between",
+				blockSize: "100%",
+				maxInlineSize: "1280px",
+				marginInline: "auto",
+			})}
+		>
 			<Header />
 			<Slot />
 			<Footer />
