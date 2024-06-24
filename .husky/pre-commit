@@ -1,0 +1,3 @@
+bun run build.types
+bun lint
+bun run fmt.check

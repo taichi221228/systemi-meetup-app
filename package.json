@@ -23,7 +23,8 @@
 		"lint.fix": "concurrently -n \"eslint,biome\" -c \"#4831BD,#61A5FA\" \"ESLINT_USE_FLAT_CONFIG=false eslint -c \\\"./eslint.config.cjs\\\" --fix \\\"src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}\\\"\" \"bunx @biomejs/biome lint --write .\"",
 		"preview": "qwik build preview && vite preview --open",
 		"start": "vite --open --mode ssr",
-		"qwik": "qwik"
+		"qwik": "qwik",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.2",
