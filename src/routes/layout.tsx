@@ -2,6 +2,7 @@ import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 import "@fontsource-variable/inter";
+import { Footer } from "./layout/footer";
 import { Header } from "./layout/header";
 
 /** @private */
@@ -18,6 +19,7 @@ export default component$(() => {
 		<>
 			<Header />
 			<Slot />
+			<Footer />
 		</>
 	);
 });
