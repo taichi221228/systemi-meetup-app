@@ -7,7 +7,6 @@ import "./global.css";
 
 /** @package */
 export default component$(() => {
-
 	return (
 		<QwikCityProvider>
 			<head>
