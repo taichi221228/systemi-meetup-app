@@ -1,17 +1,19 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { VelvetBanana } from "~/components/velvet-banana/velvet-banana";
-import { Bananas } from "~/integrations/react/bananas/bananas";
+import { Bananas, type BananasProps } from "~/integrations/react/bananas/bananas";
 import { css } from "~/styled-system/css";
+
+type Store = BananasProps;
 
 /** @private */
 export default component$(() => {
-	const speed = useSignal(1);
+	const store = useStore<Store>({ speed: 1 });
 
 	return (
 		<>
-			<Bananas speed={speed.value} />
+			<Bananas {...store} />
 
 			<VelvetBanana
 				class={css({
@@ -35,10 +37,10 @@ export default component$(() => {
 					min="0"
 					max="10"
 					step="1"
-					value={speed.value}
+					value={store.speed}
 					onInput$={(e) => {
 						const element = e.target as HTMLInputElement | null;
-						if (element) speed.value = Number(element.value);
+						if (element) store.speed = Number(element.value);
 					}}
 				/>
 			</div>
