@@ -1,4 +1,4 @@
-// import { component$, useStore } from "@builder.io/qwik";
+// import { $, component$, useStore } from "@builder.io/qwik";
 // import type { DocumentHead } from "@builder.io/qwik-city";
 //
 // import { VelvetBanana } from "~/components/velvet-banana/velvet-banana";
@@ -9,7 +9,7 @@
 //
 // /** @private */
 // export default component$(() => {
-// 	const store = useStore<Store>({ speed: 1 });
+// 	const store = useStore<Store>({ speed: 1, count: 80 });
 //
 // 	return (
 // 		<>
@@ -20,6 +20,9 @@
 // 					position: "absolute",
 // 					inset: 0,
 // 					margin: "auto",
+// 				})}
+// 				onClick$={$(() => {
+// 					store.count = Math.floor(Math.random() * 100);
 // 				})}
 // 			/>
 //

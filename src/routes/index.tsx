@@ -9,7 +9,7 @@ import { css } from "~/styled-system/css";
 
 /** @private */
 export default component$(() => {
-	// const store = useStore<Store>({ speed: 1 });
+	// const store = useStore<Store>({ speed: 1, count: 80});
 
 	return (
 		<>
@@ -21,7 +21,9 @@ export default component$(() => {
 					inset: 0,
 					margin: "auto",
 				})}
-				onClick$={$(() => {})}
+				onClick$={$(() => {
+					// store.count = Math.floor(Math.random() * 100);
+				})}
 			/>
 
 			<div
