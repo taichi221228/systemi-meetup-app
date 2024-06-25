@@ -1,4 +1,4 @@
-import { component$, useStore } from "@builder.io/qwik";
+import { $, component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { VelvetBanana } from "~/components/velvet-banana/velvet-banana";
@@ -21,6 +21,7 @@ export default component$(() => {
 					inset: 0,
 					margin: "auto",
 				})}
+				onClick$={$(() => {})}
 			/>
 
 			<div
