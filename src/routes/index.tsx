@@ -39,8 +39,7 @@ export default component$(() => {
 					step="1"
 					value={store.speed}
 					onInput$={(e) => {
-						const element = e.target as HTMLInputElement | null;
-						if (element) store.speed = Number(element.value);
+						if (e.target instanceof HTMLInputElement) store.speed = Number(e.target.value);
 					}}
 				/>
 			</div>
