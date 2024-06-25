@@ -2,18 +2,18 @@ import { component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { VelvetBanana } from "~/components/velvet-banana/velvet-banana";
-import { Bananas, type BananasProps } from "~/integrations/react/bananas/bananas";
+// import { Bananas, type BananasProps } from "~/integrations/react/bananas/bananas";
 import { css } from "~/styled-system/css";
 
-type Store = BananasProps;
+// type Store = BananasProps;
 
 /** @private */
 export default component$(() => {
-	const store = useStore<Store>({ speed: 1 });
+	// const store = useStore<Store>({ speed: 1 });
 
 	return (
 		<>
-			<Bananas {...store} />
+			{/*<Bananas speed={1} />*/}
 
 			<VelvetBanana
 				class={css({
@@ -37,10 +37,10 @@ export default component$(() => {
 					min="0"
 					max="10"
 					step="1"
-					value={store.speed}
-					onInput$={(e) => {
-						if (e.target instanceof HTMLInputElement) store.speed = Number(e.target.value);
-					}}
+					// value={store.speed}
+					// onInput$={(e) => {
+					// 	if (e.target instanceof HTMLInputElement) store.speed = Number(e.target.value);
+					// }}
 				/>
 			</div>
 		</>
